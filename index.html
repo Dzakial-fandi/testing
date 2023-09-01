@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Dzaki al-fandi</title>
+
+    <style>
+      .mytitle {
+        width: 100%;
+        height: 250px;
+
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://i.pinimg.com/564x/1d/1a/f7/1d1af7ea6a4c5b78d3683e0e4014e3db.jpg");
+        background-position: center bottom;
+        background-size: cover;
+
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .mytitle > button {
+        width: 200px;
+        height: 50px;
+
+        background-color: transparent;
+        color: white;
+
+        border-radius: 50px;
+        border: 1px solid white;
+
+        margin-top: 10px;
+      }
+
+      .mytitle > button:hover {
+        border: 2px solid white;
+      }
+
+      .mycards {
+        margin: 20px auto 0px auto;
+        width: 95%;
+        max-width: 1200px;
+      }
+
+      .mycomment {
+        color: gray;
+      }
+
+      .mypost {
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 0% auto;
+        padding: 20px;
+        box-shadow: 0px 0px 3px 0px gray;
+      }
+
+      .mybtns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .mybtns > button {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mytitle">
+      <h1>My favorite movies</h1>
+      <button>Save a new movie</button>
+    </div>
+
+    <div class="mypost">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Enter character URL"
+        />
+        <label for="floatingInput">character URL</label>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Stars</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>-- Option select a rating --</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+      </div>
+      <div class="form-floating">
+        <textarea
+          class="form-control"
+          placeholder="Leave a comment here"
+          id="floatingTextarea"
+        ></textarea>
+        <label for="floatingTextarea">Comment</label>
+      </div>
+      <div class="mybtns">
+        <button type="button" class="btn btn-dark">Save</button>
+        <button type="button" class="btn btn-outline-dark">Close</button>
+      </div>
+    </div>
+
+    <div class="mycards text-center">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/564x/40/5a/c4/405ac483403e7b1a7a3b3cb46a22c3e7.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hu Tao</h5>
+              <p class="card-text">
+                Master ke-77 Wangsheng Funeral Parlor. Dia mengambil alih bisnis
+                ini di umur yang cukup muda.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="mycomment">This is a fake coment</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/564x/40/5a/c4/405ac483403e7b1a7a3b3cb46a22c3e7.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hu Tao</h5>
+              <p class="card-text">
+                Master ke-77 Wangsheng Funeral Parlor. Dia mengambil alih bisnis
+                ini di umur yang cukup muda.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="mycomment">This is a fake coment</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/564x/40/5a/c4/405ac483403e7b1a7a3b3cb46a22c3e7.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hu Tao</h5>
+              <p class="card-text">
+                Master ke-77 Wangsheng Funeral Parlor. Dia mengambil alih bisnis
+                ini di umur yang cukup muda.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="mycomment">This is a fake coment</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/564x/40/5a/c4/405ac483403e7b1a7a3b3cb46a22c3e7.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hu Tao</h5>
+              <p class="card-text">
+                Master ke-77 Wangsheng Funeral Parlor. Dia mengambil alih bisnis
+                ini di umur yang cukup muda.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="mycomment">This is a fake coment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
